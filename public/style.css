@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* text-align: center; */
+}
+
+label {
+  display: block;
+}
+
+.project-link {
+  color: black;
+  text-decoration: none;
+}
+.project-link:hover {
+  color: black;
+  text-decoration: none;
+  /* background-color: gold; */
+}
+
+nav a {
+  color: grey;
+  display: inline-block;
+  margin: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: silver;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* nav a:active{
+  text-decoration:  underline;
+  color: black;
+} */
+
+nav a:active::after {
+  text-decoration: underline;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./home-background.jpg');
+  height: 90vh;
+
+  /* Parallax Effect */
+  background-attachment: fixed;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.typer {
+  /* display: flex; */
+  padding-top: 120px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.about {
+  padding-top: 245px;
+  padding-bottom: 130px;
+  vertical-align: middle;
+  font-size: 25px;
+}
+.about-image {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./linked-in-profile.jpg'); */
+  padding: 150px 40px 0px 40px;
+  width: 500px;
+  height: 700px;
+}
+.projects {
+  padding: 50px;
+}
+
+.project-title {
+  padding-top: 75px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.project-description {
+  font-size: 23px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
