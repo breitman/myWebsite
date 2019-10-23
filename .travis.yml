@@ -16,7 +16,6 @@ install:
 before_script:
   - psql -c 'create database "boilermaker-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
 script:
-  - npm test             # test the code
   - npm run build-client # make the bundle
 
 # before_deploy:
@@ -24,6 +23,6 @@ script:
 # deploy:
 #   skip_cleanup: true # prevents travis from deleting the build
 #   provider: heroku
-#   app: YOUR-HEROKU-APP-NAME-HERE # see README
+#   app: benreitman # see README
 #   api_key:
 #     secure: YOUR-***ENCRYPTED***-API-KEY-HERE # see README
