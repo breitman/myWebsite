@@ -5,7 +5,7 @@ const databaseName = pkg.name + (process.env.NODE_ENV === 'test' ? '-test' : '')
 console.log(process.env.DATABASE_URL)
 
 const db = new Sequelize(
-  process.env.DATABASE_URL || `postgres://benreitman.heroku/${databaseName}`,
+  process.env.DATABASE_URL || `postgres://heroku:5432/${databaseName}`,
   {
     logging: false
   }
