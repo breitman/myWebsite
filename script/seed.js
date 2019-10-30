@@ -33,7 +33,8 @@ async function seed() {
     Project.create({
       name: 'The Floor is Lava',
       description:
-        'A single player, 2D platformer, endless runner game, where a player has to jump from one platform to another, without falling into the lava. Each platform has its own characteristics, keeping the game challenging and the players’ next moves uncertain.'
+        'A single player, 2D platformer, endless runner game, where a player has to jump from one platform to another, without falling into the lava. Each platform has its own characteristics, keeping the game challenging and the players’ next moves uncertain.',
+        href: '/Users/breitman/Desktop/myWebsite/public/game_for_website/index.html'
     }),
     Project.create({
       name: '537Make',
