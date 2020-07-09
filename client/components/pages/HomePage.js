@@ -1,16 +1,11 @@
 import React, {Component} from 'react'
 import Typed from 'typed.js'
-import ProjectsPage from './ProjectsPage'
-import {Link, withRouter} from 'react-router-dom'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import AboutMePage from './AboutMePage'
 
 class HomePage extends Component {
   constructor() {
     super()
-
-    //this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -18,7 +13,6 @@ class HomePage extends Component {
       strings: [
         'I am Ben Reitman',
         'I am a programmer',
-        'I am a student',
         'I am a traveler',
         'I am a gamer',
         'I am an athlete'
@@ -77,7 +71,7 @@ class HomePage extends Component {
             </a>
             <a
               className="icon"
-              href="./Ben Reitman-Resume.pdf"
+              href="/Users/breitman/Desktop/myWebsite/public/Ben_Reitman_Resume.pdf"
               target="_blank"
               download
             >

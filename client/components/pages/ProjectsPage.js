@@ -15,7 +15,7 @@ class ProjectsPage extends Component {
         <h1 className="project-title">Projects</h1>
         <div>
           <ul className="cards">
-            {projects.map(project => (
+            {projects && projects.map(project => (
               <ProjectCard
                 className="card"
                 project={project}

@@ -28,10 +28,10 @@ class NavBar extends Component {
             >
               About Me
             </NavLink>
-            <NavLink
+            <NavLink //TODO: change this so that scrolls into correct view
               to="/#projects"
               scroll={el =>
-                el.scrollIntoView({behavior: 'smooth', block: 'end'})
+                el.scrollIntoView({behavior: 'smooth', block: 'start'})
               }
             >
               Projects

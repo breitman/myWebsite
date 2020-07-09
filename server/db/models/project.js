@@ -11,7 +11,7 @@ const Project = db.define('project', {
   },
 
   imageURl: {
-    type: Sequelize.TEXT
+    type: Sequelize.STRING
   },
   href: {
     type: Sequelize.TEXT

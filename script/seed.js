@@ -3,7 +3,6 @@
 const db = require('../server/db')
 const {Project} = require('../server/db/models')
 
-//import img from '../public/AR'
 
 async function seed() {
   await db.sync({force: true})
@@ -21,31 +20,36 @@ async function seed() {
       name: 'ARcity',
       description:
         'An immersive Augmented Reality iOS experience that allows users to walk around the city, play AR games, and earn fun collectable trophies.',
-      imageURl: '../public/ARcity-homePage.png',
+      imageURl: 'https://camo.githubusercontent.com/c0260b484dc08e9872e3b65e0100ecd89721dace/68747470733a2f2f696d6775722e636f6d2f43676b5a6c32612e6a7067',
       href: 'https://github.com/Capstone-mARio/ARcity'
     }),
-    Project.create({
+    Project.create({ //GET A TM supertext on STAR WARS
       name: 'StarShips',
       description:
-        'A parody e-commerce website that sells starships as seen in the Star Wars series.',
+        'A parody e-commerce website that sells starships as seen in the Star Wars™ series.',
       href: 'https://grace-starships.herokuapp.com/'
     }),
     Project.create({
       name: 'The Floor is Lava',
       description:
         'A single player, 2D platformer, endless runner game, where a player has to jump from one platform to another, without falling into the lava. Each platform has its own characteristics, keeping the game challenging and the players’ next moves uncertain.',
-        href: '/Users/breitman/Desktop/myWebsite/public/game_for_website/index.html'
+        imageURL: '/Users/breitman/Desktop/myWebsite/public/Floor_Is_Lava.png',
+        href: 'https://simmer.io/@b_reity/the-floor-is-lava'
+    }),
+    Project.create({
+      name: 'Zombie Shooter',
+      description:
+      'A First Person Shooter, zombie surviver game. The objective is to survive rounds by shooting incoming zombies with fun objects picked up from the ground',
+      href: 'https://simmer.io/@b_reity/zombie-killer-5000'
     }),
     Project.create({
       name: '537Make',
       description: 'An imitation of the make utility in Linux/Unix'
     }),
-
-    Project.create({
-      name: 'Zombie Shooter',
-      description:
-        'A First Person Shooter, zombie surviver game. The objective is to survive rounds by shooting incoming zombies with fun objects picked up from the ground'
-    })
+    Project.create({ //BLANK PROJECT MODEL
+        name:'malloc/free',
+        description: 'A mock implementation of the malloc and free routines run in C',
+    }),
   ])
 
   console.log(`seeded ${projects.length} Projects`)

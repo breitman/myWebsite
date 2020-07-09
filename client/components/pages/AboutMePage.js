@@ -4,11 +4,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import img from '../../../public/linked-in-profile.jpg'
+import img from '../../src/images/linked-in-profile.jpg'
 
 class AboutMePage extends Component {
   render() {
-    return (
+     return (
       <Container id="aboutme">
         <Row>
           <Col>
@@ -16,8 +16,8 @@ class AboutMePage extends Component {
               Ben Reitman was born and raised in Palm Beach Gardens, Florida.
               During his Sophomore year of High School, Ben became extremely
               interested in programming after enrolling in his first Computer
-              Science class. He is currently a senior at the University of
-              Wisconsin-Madison persuing a BS degree in Computer Science and a
+              Science class. He has recently graduated from the University of
+              Wisconsin-Madison with a BS degree in Computer Science and a
               Certificate in Entrepreneurship. Ben is also a graduate of the
               Fullstack Academy of Code.
             </p>

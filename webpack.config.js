@@ -18,6 +18,7 @@ module.exports = {
     ignored: /node_modules/
   },
   module: {
+
     rules: [
       {
         test: /\.jsx?$/,
@@ -25,13 +26,18 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        test: /\.(png|jpg|gif)$/i,
         loader: 'url-loader?limit=100000'
       },
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
-      }
+      },
+      {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        loader: 'html-loader'
+      },
     ]
   }
 }

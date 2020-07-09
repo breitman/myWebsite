@@ -100,3 +100,9 @@ form div {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.project-img {
+  padding-left: 50px;
+  width: 300px !important;
+  height:299px;
+}
