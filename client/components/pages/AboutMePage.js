@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import img from '../../src/images/linked-in-profile.jpg'
+import img from '../../../public/linked-in-profile.jpg'
 
 class AboutMePage extends Component {
   render() {
