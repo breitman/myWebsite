@@ -13,14 +13,12 @@ async function seed() {
       name: 'Poodle',
       description:
         'An open source experimental email client with social features.',
-      imageURl: '../public/ARcity-homePage.png',
       href: 'https://github.com/PoodleApp/poodle'
     }),
     Project.create({
       name: 'ARcity',
       description:
         'An immersive Augmented Reality iOS experience that allows users to walk around the city, play AR games, and earn fun collectable trophies.',
-      imageURl: 'https://camo.githubusercontent.com/c0260b484dc08e9872e3b65e0100ecd89721dace/68747470733a2f2f696d6775722e636f6d2f43676b5a6c32612e6a7067',
       href: 'https://github.com/Capstone-mARio/ARcity'
     }),
     Project.create({ //GET A TM supertext on STAR WARS
@@ -33,7 +31,6 @@ async function seed() {
       name: 'The Floor is Lava',
       description:
         'A single player, 2D platformer, endless runner game, where a player has to jump from one platform to another, without falling into the lava. Each platform has its own characteristics, keeping the game challenging and the players’ next moves uncertain.',
-        imageURL: '/Users/breitman/Desktop/myWebsite/public/Floor_Is_Lava.png',
         href: 'https://simmer.io/@b_reity/the-floor-is-lava'
     }),
     Project.create({
