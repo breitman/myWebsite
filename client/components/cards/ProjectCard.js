@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
-import img from '../../src/images/Floor_Is_Lava.png'
 
 class ProjectCard extends Component {
   constructor(props) {
