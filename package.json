@@ -67,7 +67,7 @@
     "redux": "^3.6.0",
     "redux-logger": "^2.8.1",
     "redux-thunk": "^2.3.0",
-    "sequelize": "^4.38.0",
+    "sequelize": "^6.29.0",
     "socket.io": "^2.1.1",
     "style-loader": "^0.23.1",
     "typed.js": "^2.0.10"
